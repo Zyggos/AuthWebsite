@@ -1,0 +1,94 @@
+/* BEGIN CODE HERE */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 58px;
+  width: 250px;
+}
+
+.navbar {
+  background-color: #fff;
+  min-height: 150px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.frame {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.custom-image-300 {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+iframe {
+  margin-top: 2em;
+  border: 0;
+  height: 600px;
+  width: 100%;
+  max-width: 1200px;
+  order: 4;
+  position: relative;
+}
+
+.footer {
+  background-color: #f3f3f3;
+  height: 100px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-image {
+  width: max-content;
+  height: max-content;
+  max-height: 400px;
+  width: 100%;
+}
+
+div.col-md-6,
+div.col-md-3,
+div.row-md-9,
+div.row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.left-center-text {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.right-bottom-text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* END CODE HERE */

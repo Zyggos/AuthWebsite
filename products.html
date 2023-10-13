@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>WIS Project - Products</title>
+    <link href="products.css" rel="stylesheet" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar bg-light">
+      <div class="container-fluid navbar-content" style="padding: 0">
+        <img
+          alt="Λογότυπο τμήματος Πληροφορικής Α.Π.Θ"
+          class="d-inline-block align-text-top logo"
+          src="logo.png"
+        />
+
+        <ul class="nav nav nav-pills justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Homepage</a>
+          </li>
+          <li class="nav-item">
+            <a aria-current="page" class="nav-link active" href="products.html"
+              >Products</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="frame">
+        <div class="input-group d-flex align-items-center search-container">
+          <label class="search-label" for="search">Search a product</label>
+          <input class="form-control" id="search" placeholder="" type="text" />
+          <div class="input-group-append">
+            <button class="btn btn-primary search-btn" type="button">
+              Search
+            </button>
+          </div>
+        </div>
+
+        <br />
+        <h5>Results</h5>
+        <table class="table table-bordered" id="results">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Production year</th>
+            <th>Price</th>
+            <th>Color</th>
+            <th>Size</th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="frame">
+        <h5>Add a product</h5>
+        <div class="label">
+          <br />
+          <label for="name">Name</label>
+          <input id="name" placeholder="" type="text" />
+          <br />
+
+          <br />
+          <label for="prod_year">Production year </label>
+          <input id="prod_year" placeholder="" type="text" />
+          <br />
+
+          <br />
+          <label for="price">Price</label>
+          <input id="price" placeholder="" type="text" />
+          <br />
+
+          <br />
+          <label for="color">Color</label>
+          <input id="color" placeholder="" type="text" />
+          <br />
+
+          <br />
+          <label for="size">Size </label>
+          <input id="size" placeholder="" type="text" />
+          <br />
+        </div>
+
+        <br />
+        <div class="right">
+          <button
+            class="btn btn-primary"
+            onclick="productFormOnSubmit(event)"
+            type="button"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-center" style="margin-bottom: 0">Full Name - AEM</p>
+      </div>
+
+    <script src="products.js"></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
